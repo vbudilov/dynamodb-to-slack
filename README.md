@@ -14,7 +14,11 @@ I didn't want to start from scratch every time. This is a templated project that
 ### What does it do?
 
 Simple -- it copies your DDB Stream 'email' field to Slack. That's it. It assumes a lot and you will need to tweak it if you want to save anything but Strings, but it's easy to add that logic later on
+### Screenshots
 
+<img src="data-flow-diagram.png"
+     style="float: left; margin: 20px; max-width: 500px" />
+     
 ### How? 
 These 2 Parameter Store variables need to exist in order for the Lambda function to function properly. The first specifies which DDB Stream to attach to 
 and the second specifies which Slack endpoint to propagate the data to.
